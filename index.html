@@ -23,18 +23,19 @@
 
 <!-- FULL web Content -->
 
-<body class="antialiased font-['Montserrat'] bg-[#13170f] mouse-cursor-gradient-tracking text-white">
-    <div class="">
+<body class="antialiased font-['Montserrat'] bg-[#000000] mouse-cursor-gradient-tracking text-white">
+    <div class="z-0">
     </div>
-    <main class="px-2 lg:px-10 lg:max-w-7xl lg:mx-auto">
+    <main
+        class="px-2 lg:px-10 lg:max-w-7xl lg:mx-auto overflow-auto h-screen scrollbar-hide lg:overflow-hidden lg:h-auto lg:scrollbar-default">
         <!-- First section contents -->
-        <div class="flex">
-            <header class="p-4 shadow-md w-full lg:w-auto h-screen">
+        <div class="lg:flex grid">
+            <header class="p-4 w-full lg:w-auto relative top-0">
                 <div class="flex flex-col items-center lg:items-start">
                     <img src="images/sss.jpg" alt="frederick-image"
                         class="w-56 rounded-full mb-4 lg:mb-0 lg:mr-4 mt-10">
                     <div class="text-center lg:text-left mt-7">
-                        <h1 class="font-bold text-4xl">Frederick Socorin</h1>
+                        <h1 class="font-bold lg:text-4xl text-3xl">Frederick Socorin</h1>
                         <h2 class="text-gray-400 text-md mt-1">Fullstack Web Developer</h2>
                         <h2 class="text-sm mt-1"><i class="fa-regular fa-envelope"></i> socorinfrederick@gmail.com
                         </h2>
@@ -42,7 +43,8 @@
 
                     <div class="mt-20 hidden lg:grid">
                         <ul>
-                            <li class="text-base text-gray-400"><a href="#about">About</a></li>
+                            <li class="text-base text-gray-400 hover:text-lime-300 hover:underline"><a
+                                    href="#about">About</a></li>
                         </ul>
                         <ul class="mt-2">
                             <li class="text-base text-gray-400"><a href="#experience">Experience</a></li>
@@ -58,11 +60,108 @@
                     </div>
                 </div>
 
-                <div class="mt-4 lg:mt-56">
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
+                <!-- Social Media ICONS -->
+                <!-- <div class="mt-4 lg:mt-56 w-20 flex gap-2">
+                    <div class="bg-gray-400 bg-opacity-5 rounded-full">
+                        <a href="" class="w-10 h-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"
+                                class="w-10 h-10">
+                                <path class="fill-current hover:fill-lime-300"
+                                    d="M17,7.625C17,7.15,16.968,6.567,16.75,6c0,0-1.426,0.01-2.771,1.284C13.358,7.103,12.694,7,12,7	c-0.694,0-1.358,0.103-1.979,0.284C8.676,6.01,7.25,6,7.25,6C7.033,6.567,7,7.15,7,7.625c0,0.719,0.128,1.16,0.205,1.378	C6.452,9.839,6,10.874,6,12c0,2.186,1.655,3.531,4,4c-0.527,0.463-0.85,1.11-0.953,1.836C8.824,17.944,8.5,18,8.125,18	c-0.301,0-0.886-0.142-1.431-0.991C6.474,16.665,6,16,5.375,16C5.253,16,4.996,15.992,5,16.181c0.002,0.09,0.14,0.091,0.435,0.354	C5.682,16.756,5.912,17.118,6,17.5c0.145,0.627,0.726,1.875,2.125,1.875C8.625,19.375,9,19.25,9,19.25v2.291	C9.947,21.838,10.955,22,12,22s2.053-0.162,3-0.459V18.25c0-0.899-0.374-1.7-1-2.25c2.345-0.469,4-1.814,4-4	c0-1.106-0.436-2.125-1.166-2.953C16.897,8.852,17,8.4,17,7.625z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div> -->
             </header>
+
+            <div class="flex-1 lg:p-8 h-screen overflow-auto scrollbar-hide lg:mt-0 mt-10">
+                <section class="lg:p-6 lg:px-20" id="about">
+                    <div class="p-3 rounded-2xl w-full">
+                        <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+                        <p class="text-lg text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Proin
+                            euismod
+                            neque
+                            et varius luctus. Integer vel bibendum metus, ac mattis ex. Suspendisse potenti. Nullam
+                            laoreet
+                            accumsan
+                            tellus, at venenatis justo venenatis nec.</p>
+                        <!-- Add more content as needed -->
+
+                    </div>
+                </section>
+
+                <section class="lg:p-6 lg:px-20" id="experience">
+                    <div
+                        class="hover:bg-[#121212] rounded-2xl w-full p-3 border-lime-300 hover:border border-opacity-5 bg-opacity-5">
+                        <h1 class="text-4xl font-bold mb-4">Experience </h1>
+                        <p class="text-lg text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Proin
+                            euismod
+                            neque
+                            et varius luctus. Integer vel bibendum metus, ac mattis ex. Suspendisse potenti. Nullam
+                            laoreet
+                            accumsan
+                            tellus, at venenatis justo venenatis nec.</p>
+                        <!-- Add more content as needed -->
+                    </div>
+                </section>
+
+                <section class="lg:p-6 lg:px-20" id="projects">
+                    <div
+                        class="hover:bg-[#121212] rounded-2xl w-full p-3 border-lime-300 hover:border border-opacity-5 bg-opacity-5">
+                        <h1 class="text-4xl font-bold mb-4">Projects</h1>
+                        <p class="text-lg text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Proin
+                            euismod
+                            neque
+                            et varius luctus. Integer vel bibendum metus, ac mattis ex. Suspendisse potenti. Nullam
+                            laoreet
+                            accumsan
+                            tellus, at venenatis justo venenatis nec.</p>
+                        <!-- Add more content as needed -->
+                    </div>
+                </section>
+
+                <section class="lg:p-6 lg:px-20" id="computer-builds">
+                    <div
+                        class="hover:bg-[#121212] rounded-2xl w-full p-3 border-lime-300 hover:border border-opacity-5 bg-opacity-5">
+                        <h1 class="text-4xl font-bold mb-4">Computer Builds</h1>
+                        <p class="text-lg text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Proin
+                            euismod
+                            neque
+                            et varius luctus. Integer vel bibendum metus, ac mattis ex. Suspendisse potenti. Nullam
+                            laoreet
+                            accumsan
+                            tellus, at venenatis justo venenatis nec.</p>
+                        <!-- Add more content as needed -->
+                    </div>
+                </section>
+
+                <section class="lg:p-6 lg:px-20" id="experience">
+                    <div
+                        class="hover:bg-[#121212] rounded-2xl w-full p-3 border-lime-300 hover:border border-opacity-5 bg-opacity-5">
+                        <h1 class="text-4xl font-bold mb-4">Project Experience </h1>
+                        <p class="text-lg text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Proin
+                            euismod
+                            neque
+                            et varius luctus. Integer vel bibendum metus, ac mattis ex. Suspendisse potenti. Nullam
+                            laoreet
+                            accumsan
+                            tellus, at venenatis justo venenatis nec.</p>
+                        <!-- Add more content as needed -->
+                    </div>
+                </section>
+                <!-- Add more sections or content here -->
+
+            </div>
+
         </div>
+
+
     </main>
 
     <!-- All of the javascript local file must be on the bottm of the main attribute -->
