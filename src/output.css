@@ -975,6 +975,14 @@ video {
   .sm\:hidden{
     display: none;
   }
+
+  .sm\:text-nowrap{
+    text-wrap: nowrap;
+  }
+
+  .sm\:text-left{
+    text-align: left;
+  }
 }
 
 @media (min-width: 768px){
@@ -1007,6 +1015,10 @@ video {
 
   .lg\:mt-56{
     margin-top: 14rem;
+  }
+
+  .lg\:mt-48{
+    margin-top: 12rem;
   }
 
   .lg\:flex{
