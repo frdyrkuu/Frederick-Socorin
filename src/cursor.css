@@ -14,7 +14,7 @@
 }
 
 .mouse-cursor-gradient-tracking:before {
-  --size: 500px;
+  --size: 2000px;
   content: '';
   position: absolute;
   pointer-events: none;
@@ -28,7 +28,7 @@
 }
 
 .mouse-cursor-gradient-tracking:hover:before {
-  --size: 800px;
+  --size: 2000px;
 }
 
 body {
