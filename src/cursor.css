@@ -30,3 +30,7 @@
 .mouse-cursor-gradient-tracking:hover:before {
   --size: 800px;
 }
+
+body {
+  scroll-behavior: smooth;
+}
