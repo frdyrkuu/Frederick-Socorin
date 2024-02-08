@@ -619,6 +619,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -809,6 +813,10 @@ video {
 
 .p-4{
   padding: 1rem;
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .px-2{
@@ -1078,8 +1086,17 @@ video {
     width: 10rem;
   }
 
+  .sm\:p-3{
+    padding: 0.75rem;
+  }
+
   .sm\:text-left{
     text-align: left;
+  }
+
+  .sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
