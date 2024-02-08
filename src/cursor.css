@@ -6,7 +6,7 @@
   color: white;
   outline: none;
   overflow: hidden;
-
+  overflow-x: hidden;
 }
 
 .mouse-cursor-gradient-tracking span {
@@ -14,7 +14,7 @@
 }
 
 .mouse-cursor-gradient-tracking:before {
-  --size: 2000px;
+  --size: 1000px;
   content: '';
   position: absolute;
   pointer-events: none;
@@ -28,16 +28,20 @@
 }
 
 .mouse-cursor-gradient-tracking:hover:before {
-  --size: 2000px;
+  --size: 1000px;
 }
 
 body {
   scroll-behavior: smooth;
 }
 
+/* Media query for mobile devices */
 @media (max-width: 767px) {
-  body {
-    touch-action: manipulation;
-    user-select: none;
+  .mouse-cursor-gradient-tracking:before {
+    --size: 300px; /* Adjust the size for mobile devices */
+  }
+
+  .mouse-cursor-gradient-tracking:hover:before {
+    --size: 300px; /* Adjust the size for mobile devices on hover */
   }
 }

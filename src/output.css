@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
@@ -617,10 +615,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
 .flex{
   display: flex;
 }
@@ -693,10 +687,6 @@ video {
   flex-direction: column;
 }
 
-.flex-col-reverse{
-  flex-direction: column-reverse;
-}
-
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -745,25 +735,13 @@ video {
   border-radius: 0.125rem;
 }
 
-.border{
-  border-width: 1px;
-}
-
-.border-4{
-  border-width: 4px;
-}
-
-.border-8{
-  border-width: 8px;
-}
-
 .border-2{
   border-width: 2px;
 }
 
-.border-\[\#1ed760\]{
+.border-gray-400{
   --tw-border-opacity: 1;
-  border-color: rgb(30 215 96 / var(--tw-border-opacity));
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-gray-900{
@@ -775,17 +753,12 @@ video {
   border-color: transparent;
 }
 
-.border-gray-400{
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+.border-opacity-10{
+  --tw-border-opacity: 0.1;
 }
 
 .border-opacity-5{
   --tw-border-opacity: 0.05;
-}
-
-.border-opacity-10{
-  --tw-border-opacity: 0.1;
 }
 
 .bg-\[\#1ed760\]{
@@ -804,10 +777,6 @@ video {
 
 .bg-opacity-5{
   --tw-bg-opacity: 0.05;
-}
-
-.bg-opacity-10{
-  --tw-bg-opacity: 0.1;
 }
 
 .fill-\[\#1ed76088\]{
@@ -843,16 +812,12 @@ video {
   padding-right: 0.5rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
-}
-
-.text-justify{
-  text-align: justify;
-}
-
-.font-\[\'Poppins\'\]{
-  font-family: 'Poppins';
 }
 
 .text-3xl{
@@ -865,9 +830,9 @@ video {
   line-height: 1.5rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -914,10 +879,6 @@ video {
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.opacity-5{
-  opacity: 0.05;
 }
 
 .shadow{
@@ -983,10 +944,6 @@ video {
 
 .hover\:border:hover{
   border-width: 1px;
-}
-
-.hover\:border-8:hover{
-  border-width: 8px;
 }
 
 .hover\:border-4:hover{
@@ -1105,10 +1062,6 @@ video {
 
   .lg\:max-w-7xl{
     max-width: 80rem;
-  }
-
-  .lg\:flex-wrap{
-    flex-wrap: wrap;
   }
 
   .lg\:flex-wrap-reverse{
