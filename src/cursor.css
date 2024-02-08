@@ -36,11 +36,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .no-zoom {
+  body {
     touch-action: manipulation;
     user-select: none;
-    -ms-touch-action: manipulation;
-    -ms-user-select: none;
-    /* Additional styles if needed */
   }
 }
