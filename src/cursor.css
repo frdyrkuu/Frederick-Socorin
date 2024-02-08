@@ -34,3 +34,13 @@
 body {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 767px) {
+  .no-zoom {
+    touch-action: manipulation;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    -ms-user-select: none;
+    /* Additional styles if needed */
+  }
+}
