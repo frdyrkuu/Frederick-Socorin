@@ -635,8 +635,8 @@ video {
   height: 2.5rem;
 }
 
-.h-24{
-  height: 6rem;
+.h-16{
+  height: 4rem;
 }
 
 .h-6{
@@ -651,8 +651,8 @@ video {
   width: 2.5rem;
 }
 
-.w-40{
-  width: 10rem;
+.w-48{
+  width: 12rem;
 }
 
 .w-56{
@@ -830,11 +830,6 @@ video {
   line-height: 1.5rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1005,8 +1000,23 @@ video {
     display: flex;
   }
 
+  .sm\:h-24{
+    height: 6rem;
+  }
+
+  .sm\:w-40{
+    width: 10rem;
+  }
+
   .sm\:text-left{
     text-align: left;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

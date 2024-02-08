@@ -6,7 +6,7 @@
   color: white;
   outline: none;
   overflow: hidden;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .mouse-cursor-gradient-tracking span {
@@ -14,7 +14,7 @@
 }
 
 .mouse-cursor-gradient-tracking:before {
-  --size: 1000px;
+  --size: 2000px;
   content: '';
   position: absolute;
   pointer-events: none;
@@ -25,23 +25,37 @@
   background: radial-gradient(circle closest-side, rgba(30, 215, 96, 0.1), transparent);
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease;
+
 }
 
 .mouse-cursor-gradient-tracking:hover:before {
-  --size: 1000px;
+  --size: 2000px;
 }
 
 body {
   scroll-behavior: smooth;
+
 }
 
 /* Media query for mobile devices */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .mouse-cursor-gradient-tracking:before {
-    --size: 300px; /* Adjust the size for mobile devices */
+    --size: 0px;
+
   }
 
   .mouse-cursor-gradient-tracking:hover:before {
-    --size: 300px; /* Adjust the size for mobile devices on hover */
+    --size: 0px;
+  }
+}
+
+/* Media query for tablets and other touch devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .mouse-cursor-gradient-tracking:before {
+    --size: 0px;
+  }
+
+  .mouse-cursor-gradient-tracking:hover:before {
+    --size: 0px;
   }
 }
