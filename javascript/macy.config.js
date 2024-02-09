@@ -14,6 +14,12 @@ var macy = Macy({
 
 macy.runOnImageLoad(function () {
     var show = document.getElementById("macy")
-    show.classList.add("show")
+    var hide = document.getElementById("loader")
+    
+    show.classList.remove("hidden")
+    show.classList.add("visible")
+
+    hide.classList.remove("visible")
+    hide.classList.add("hidden")
     macy.recalculate(true, true);
 });
