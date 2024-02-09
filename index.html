@@ -32,7 +32,27 @@
             <header class="p-4 w-full lg:w-auto relative top-0">
                 <div class="flex flex-col items-center lg:items-start">
                     <img src="images/sss.jpg" alt="frederick-image"
-                        class="w-56 rounded-full mb-4 lg:mb-0 lg:mr-4 mt-10">
+                        class="w-56 rounded-full mb-4 lg:mb-0 lg:mr-4 mt-10 hidden" id="image">
+
+                    <img src="images/image-loader.png" alt="frederick-image"
+                        class="w-56 rounded-2xl opacity-20 animate-pulse mb-4 lg:mb-0 lg:mr-4 mt-10 visible"
+                        id="loader">
+
+                    <script>
+                        var img = document.getElementById("image");
+                        
+                        img.onload = function(){
+                            var loader = document.getElementById("loader");
+
+                            img.classList.remove("hidden")
+                            img.classList.add("visible")
+                            
+                            loader.classList.remove("visible")
+                            loader.classList.add("hidden")
+                        }
+     
+                    </script>
+
                     <div class="text-center lg:text-left mt-7">
                         <h1 class="font-bold lg:text-4xl text-3xl">Frederick Socorin</h1>
                         <h2 class="text-md mt-1 text-gray-300">Fullstack Web Developer</h2>
@@ -63,7 +83,7 @@
                         <ul class="mt-2">
                             <li
                                 class="text-base transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">
-                                <a href="#computer-builds" class="hover:text-[#1ed760]">Computer Builds</a>
+                                <a href="./others/computerbuilds.html" class="hover:text-[#1ed760]">Computer Builds</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
@@ -1137,7 +1157,8 @@
                             <br>
                             <!-- 1st work -->
                             <div>
-                                <h1 class="text-base font-semibold mb-2 flex flex-row gap-3"><a href="./others/computerbuilds.html" target="_blank"
+                                <h1 class="text-base font-semibold mb-2 flex flex-row gap-3"><a
+                                        href="./others/computerbuilds.html" target="_blank"
                                         class="flex gap-1 justify-center items-center transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760] stroke-white hover:stroke-[#1ed760] ">Computer
                                         Building and Troubleshooting
                                         <svg width="16px" height="16px" viewBox="0 0 64.00 64.00"
@@ -6478,7 +6499,8 @@
                         <div class="">
                             <button
                                 class="hover:text-[#1ed760] hover:stroke-[#1ed760] stroke-white hover:border-b-[#1ed760] hover:border-b-4 duration-700 transition ease-in-out">
-                                <h1 class="text-base font-semibold flex gap-1 justify-center items-center ">Dean's Lister S.Y
+                                <h1 class="text-base font-semibold flex gap-1 justify-center items-center ">Dean's
+                                    Lister S.Y
                                     2022-2023
                                     <svg width="16px" height="16px" viewBox="0 0 64.00 64.00"
                                         xmlns="http://www.w3.org/2000/svg" stroke-width="6.4" class="" fill="none">
@@ -6508,7 +6530,8 @@
                         <div class="">
                             <button
                                 class="hover:text-[#1ed760] hover:stroke-[#1ed760] stroke-white hover:border-b-[#1ed760] hover:border-b-4 duration-700 transition ease-in-out">
-                                <h1 class="justify-center items-center text-base font-semibold flex gap-1">Dean's Lister S.Y
+                                <h1 class="justify-center items-center text-base font-semibold flex gap-1">Dean's Lister
+                                    S.Y
                                     2022-2023
                                     <svg width="16px" height="16px" viewBox="0 0 64.00 64.00"
                                         xmlns="http://www.w3.org/2000/svg" stroke-width="6.4" class="" fill="none">
@@ -6538,7 +6561,8 @@
                         <div class="">
                             <button
                                 class="hover:text-[#1ed760] hover:stroke-[#1ed760] stroke-white hover:border-b-[#1ed760] hover:border-b-4 duration-700 transition ease-in-out">
-                                <h1 class="text-base font-semibold flex gap-1 justify-center items-center ">Web Developer -
+                                <h1 class="text-base font-semibold flex gap-1 justify-center items-center ">Web
+                                    Developer -
                                     Internship
                                     <svg width="16px" height="16px" viewBox="0 0 64.00 64.00"
                                         xmlns="http://www.w3.org/2000/svg" stroke-width="6.4" class="" fill="none">
