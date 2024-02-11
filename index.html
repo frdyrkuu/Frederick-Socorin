@@ -50,6 +50,7 @@
 </head>
 
 <!-- FULL web Content -->
+<!-- note: [#1ed760]  -->
 
 <body class="antialiased font-['Lexend Deca'] mouse-cursor-gradient-tracking text-white bg-black">
     <main
@@ -57,6 +58,52 @@
         <!-- First section contents -->
         <div class="lg:flex grid">
             <header class="p-4 w-full lg:w-auto relative top-0">
+
+                <div class="lg:collapse visible absolute top-0 right-0 mt-4" id="hamburger" onclick="Hamburger()">
+                    <button>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                            class="hover:stroke-[#1ed760] transition duration-500 ease-linear stroke-[#464455]"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 8H13.75M5 12H19M10.25 16L19 16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden bg-black px-6 p-4 shadow-[#1ed760] shadow-sm absolute mt-14 top-0 right-0 w-full rounded-lg h-48 animate-open-menu text-center justify-center items-center"
+                    id="hamburgercontent">
+                    <ul>
+                        <li class="text-base">
+                            <a href="#about"
+                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">About</a>
+                        </li>
+                    </ul>
+                    <ul class="mt-2">
+                        <li class="text-base">
+                            <a href="#experience"
+                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">Experience</a>
+                        </li>
+                    </ul>
+                    <ul class="mt-2">
+                        <li class="text-base">
+                            <a href="#projects"
+                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">Projects</a>
+                        </li>
+                    </ul>
+                    <ul class="mt-2">
+                        <li class="text-base">
+                            <a href="./others/computerbuilds.html"
+                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">
+                                Computer Builds</a>
+                        </li>
+                    </ul>
+                    <ul class="mt-2">
+                        <li class="text-base">
+                            <a href="./others/photogallery.html"
+                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">Photography</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="flex flex-col items-center lg:items-start">
                     <img src="images/sss.jpg" alt="frederick-image"
                         class="w-56 rounded-full mb-4 lg:mb-0 lg:mr-4 mt-10 hidden" id="image">
@@ -109,14 +156,13 @@
                         <ul class="mt-2">
                             <li
                                 class="text-base transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">
-                                <a href="./others/computerbuilds.html" target="_blank"
-                                    class="hover:text-[#1ed760]">Computer Builds</a>
+                                <a href="./others/computerbuilds.html" class="hover:text-[#1ed760]">Computer Builds</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
                             <li
                                 class="text-base transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">
-                                <a href="./others/photogallery.html" target="_blank">Photography</a>
+                                <a href="./others/photogallery.html">Photography</a>
                             </li>
                         </ul>
                     </div>
@@ -6679,6 +6725,7 @@
     </main>
 
     <!-- Scripts -->
+    <script src="./javascript/hamburger.js"></script>
     <script src="./javascript/animation.js"></script>
 </body>
 
