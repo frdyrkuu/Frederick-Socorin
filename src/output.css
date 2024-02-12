@@ -586,6 +586,30 @@ video {
   top: 0px;
 }
 
+.top-10{
+  top: 2.5rem;
+}
+
+.-top-10{
+  top: -2.5rem;
+}
+
+.-top-12{
+  top: -3rem;
+}
+
+.-top-14{
+  top: -3.5rem;
+}
+
+.-top-16{
+  top: -4rem;
+}
+
+.right-28{
+  right: 7rem;
+}
+
 .z-50{
   z-index: 50;
 }
@@ -602,6 +626,16 @@ video {
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-7{
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .mb-10{
@@ -674,6 +708,46 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.ml-20{
+  margin-left: 5rem;
+}
+
+.ml-80{
+  margin-left: 20rem;
+}
+
+.-ml-96{
+  margin-left: -24rem;
+}
+
+.ml-96{
+  margin-left: 24rem;
+}
+
+.ml-\[10px\]{
+  margin-left: 10px;
+}
+
+.ml-\[10\%\]{
+  margin-left: 10%;
+}
+
+.ml-\[90\%\]{
+  margin-left: 90%;
+}
+
+.ml-\[100px\]{
+  margin-left: 100px;
+}
+
+.ml-\[40rem\]{
+  margin-left: 40rem;
+}
+
+.ml-\[37rem\]{
+  margin-left: 37rem;
 }
 
 .flex{
@@ -764,8 +838,8 @@ video {
   width: 100%;
 }
 
-.w-52{
-  width: 13rem;
+.w-screen{
+  width: 100vw;
 }
 
 .max-w-full{
@@ -963,15 +1037,6 @@ video {
   background-color: rgb(82 82 82 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-600\/60{
-  background-color: rgb(82 82 82 / 0.6);
-}
-
 .bg-neutral-600\/80{
   background-color: rgb(82 82 82 / 0.8);
 }
@@ -1032,6 +1097,10 @@ video {
   padding: 1rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1050,6 +1119,16 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .text-left{
@@ -1085,6 +1164,18 @@ video {
   line-height: 1rem;
 }
 
+.text-\[2px\]{
+  font-size: 2px;
+}
+
+.text-\[20rem\]{
+  font-size: 20rem;
+}
+
+.text-\[1rem\]{
+  font-size: 1rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1099,6 +1190,18 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-thin{
+  font-weight: 100;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
 }
 
 .text-\[\#1ed760\]{
@@ -1249,26 +1352,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:-translate-y-4:hover{
-  --tw-translate-y: -1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-x-4:hover{
-  --tw-translate-x: 1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:-translate-y-2:hover{
-  --tw-translate-y: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-x-2:hover{
-  --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-105:hover{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1339,6 +1422,10 @@ video {
     display: flex;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:h-24{
     height: 6rem;
   }
@@ -1406,12 +1493,48 @@ video {
     margin-top: 8rem;
   }
 
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .lg\:ml-\[37rem\]{
+    margin-left: 37rem;
+  }
+
+  .lg\:ml-\[40rem\]{
+    margin-left: 40rem;
+  }
+
+  .lg\:ml-\[45rem\]{
+    margin-left: 45rem;
+  }
+
+  .lg\:ml-\[54rem\]{
+    margin-left: 54rem;
+  }
+
+  .lg\:ml-\[50rem\]{
+    margin-left: 50rem;
+  }
+
+  .lg\:ml-\[49rem\]{
+    margin-left: 49rem;
+  }
+
+  .lg\:ml-\[48rem\]{
+    margin-left: 48rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
 
   .lg\:grid{
     display: grid;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:h-8{
@@ -1479,5 +1602,11 @@ video {
 
   .lg\:scrollbar-default::-webkit-scrollbar{
     display: block;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:ml-\[48rem\]{
+    margin-left: 48rem;
   }
 }
