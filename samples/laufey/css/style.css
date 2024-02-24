@@ -1,0 +1,69 @@
+main {
+  background: url(../img/Laufey-Bewitched-Website.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+iframe {
+  /* width="796" height="450" */
+  width: 796px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 810px) {
+  iframe {
+    width: 400px;
+    height: 225px;
+
+    display: block;
+    margin: 0 auto;
+    /* Center the iframe horizontally */
+  }
+}
+
+html {
+  cursor: url(../img/CursorMain-V2.png), auto;
+}
+
+.burger {
+  display: flex;
+  outline: none;
+  height: 40px;
+  width: 30px;
+  border: 0px;
+  padding: 0px;
+  margin-top: 15px;
+  background: transparent;
+  transition: all 250ms ease-out;
+  cursor: pointer;
+}
+
+.burger:before,
+.burger:after {
+  content: '';
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(225, 228, 232, 0.9);
+  transition: all 250ms ease-out;
+  will-change: transform;
+}
+
+.burger:before {
+  transform: translateY(-3px);
+}
+
+.burger:after {
+  transform: translateY(3px);
+}
+
+
+.active.burger:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.active.burger:after {
+  transform: translateY(0) rotate(-45deg);
+}
