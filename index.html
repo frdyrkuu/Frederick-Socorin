@@ -37,6 +37,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./src/cursor.css">
+    <link rel="stylesheet" href="./src/style.css">
 
     <link rel="icon" type="image/x-icon"
         href="https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fc/Ember_Spirit_minimap_icon.png">
@@ -48,6 +49,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <!-- FULL web Content -->
@@ -69,55 +73,72 @@
                         </svg>
                     </button>
                 </div>
-                <div class="hidden py-4 text-[1rem] font-[Poppins] bg-black shadow-[#1ed760] shadow-sm absolute mt-14 top-0 right-0 rounded-lg animate-open-menu  w-1/2 h-auto text-center"
+                <div class="hidden right-0 items-center text-center mx-auto bg-black w-full xl:hidden fixed top-0 left-0 inset-0 z-50"
                     id="hamburgercontent">
-                    <ul>
-                        <li>
-                            <a href="#about"
-                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">About</a>
-                        </li>
-                    </ul>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="#experience"
-                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">Experience</a>
-                        </li>
-                    </ul>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="#projects"
-                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]">Projects</a>
-                        </li>
-                    </ul>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="./others/computerbuilds.html"
-                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]"
-                                target="_blank">
-                                Computer Builds</a>
-                        </li>
-                    </ul>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="./others/photogallery.html"
-                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]"
-                                target="_blank">Photography</a>
-                        </li>
-                    </ul>
 
-                    <ul class="mt-2">
-                        <li>
-                            <a href="./samples/clone.html"
-                                class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-4 border-transparent hover:border-[#1ed760]"
-                                target="_blank">Project Websites</a>
-                        </li>
-                    </ul>
+                    <div class="absolute top-0 right-0 py-10 px-10">
+                        <button onclick="hidehamburger()"><svg fill="#ffffff" height="20px" width="20px" version="1.1"
+                                id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775"
+                                xml:space="preserve">
+                                <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                       c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                       c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                       c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                       l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                       c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+                            </svg></button>
+
+                        <script>
+                            function hidehamburger() {
+                                const ham = document.getElementById('hamburgercontent');
+
+                                ham.classList.remove("visible");
+                                ham.classList.add("hidden");
+
+                            }
+
+                        </script>
+                    </div>
+                    <div class="mx-auto text-center items-center justify-center mt-48 text-white">
+                        <ul>
+                            <li>
+                                <a href="#about" class="hovereffect">About</a>
+                            </li>
+                        </ul>
+                        <ul class="mt-2">
+                            <li>
+                                <a href="#experience" class="hovereffect">Experience</a>
+                            </li>
+                        </ul>
+                        <ul class="mt-2">
+                            <li>
+                                <a href="#projects" class="hovereffect">Projects</a>
+                            </li>
+                        </ul>
+                        <ul class="mt-2">
+                            <li>
+                                <a href="./others/computerbuilds.html" target="_blank" class="hovereffect">Computer
+                                    Builds</a>
+                            </li>
+                        </ul>
+                        <ul class="mt-2">
+                            <li>
+                                <a href="./others/photogallery.html" target="_blank" class="hovereffect">Photography</a>
+                            </li>
+                        </ul>
+                        <ul class="mt-2">
+                            <li>
+                                <a href="/samples/projects.html" target="_blank" class="hovereffect">
+                                    Project Websites</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="flex flex-col items-center lg:items-start">
                     <div class="w-56 h-56 rounded-full mb-4 lg:mb-0 lg:mr-4 mt-10 hidden" id="image">
-                        <img src="images/sss.jpg" alt="frederick-image"
-                            class="w-56 rounded-full">
+                        <img src="images/sss.jpg" alt="frederick-image" class="w-56 rounded-full">
                     </div>
 
                     <div id="loader"
@@ -139,10 +160,10 @@
                     </script>
 
                     <div class="text-center lg:text-left mt-7">
-                        <h1 class="font-bold lg:text-4xl text-3xl">Frederick Socorin</h1>
-                        <h2 class="text-md mt-1 text-gray-300">Fullstack Web Developer</h2>
+                        <h1 class="font-bold lg:text-4xl text-3xl reveal-left">Frederick Socorin</h1>
+                        <h2 class="text-md mt-1 text-gray-300 reveal-left-subheadline1">Fullstack Web Developer</h2>
                         <a href="mailto: socorinfrederick@gmail.com" class="text-base">
-                            <h2 class=" mt-1 text-gray-400"><i class="fa-regular fa-envelope"></i>
+                            <h2 class=" mt-1 text-gray-400 reveal-left-subheadline2"><i class="fa-regular fa-envelope"></i>
                                 socorinfrederick@gmail.com
                             </h2>
                         </a>
@@ -151,39 +172,33 @@
                     <div class="mt-20 justify-center hidden lg:grid text-gray-300 font-[Poppins]">
                         <ul>
                             <li>
-                                <a href="#about"
-                                    class="transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-2 border-transparent hover:border-[#1ed760]">About</a>
+                                <a href="#about" class="hovereffect">About</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
                             <li>
-                                <a href="#experience"
-                                    class=" transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-2 border-transparent hover:border-[#1ed760]">Experience</a>
+                                <a href="#experience" class="hovereffect">Experience</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
                             <li>
-                                <a href="#projects"
-                                    class=" transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-2 border-transparent hover:border-[#1ed760]">Projects</a>
+                                <a href="#projects" class="hovereffect">Projects</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
                             <li>
-                                <a href="./others/computerbuilds.html" target="_blank"
-                                    class=" transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-2 border-transparent hover:border-[#1ed760]">Computer
+                                <a href="./others/computerbuilds.html" target="_blank" class="hovereffect">Computer
                                     Builds</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
                             <li>
-                                <a href="./others/photogallery.html" target="_blank"
-                                    class=" transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-2 border-transparent hover:border-[#1ed760]">Photography</a>
+                                <a href="./others/photogallery.html" target="_blank" class="hovereffect">Photography</a>
                             </li>
                         </ul>
                         <ul class="mt-2">
                             <li>
-                                <a href="/samples/clone.html" target="_blank"
-                                    class=" transition duration-500 ease-in hover:text-[#1ed760] hover:border-b-2 border-transparent hover:border-[#1ed760]">
+                                <a href="/samples/projects.html" target="_blank" class="hovereffect">
                                     Project Websites</a>
                             </li>
                         </ul>
@@ -204,7 +219,7 @@
                 </div>
 
                 <!-- Social Media ICONS -->
-                <div class="mt-6 lg:mt-32 flex gap-6 mx-auto justify-center items-center">
+                <div class="mt-6 lg:mt-20 flex gap-6">
                     <div class="hover:scale-125 duration-500 transition ease-in-out">
                         <a href="https://github.com/frdyrkuu" class="w-10 h-10">
                             <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-8 lg:w-8 w-6 h-6" viewBox="0 0 256 249"
@@ -254,7 +269,7 @@
                 <!-- Hello -->
                 <section class="w-full" id="about">
                     <div
-                        class="sm:p-3 p-0 rounded-2xl md:text-xl text-base text-opacity-80 font-normal text-gray-300 sm:text-left mb-4 text-left">
+                        class="sm:p-3 p-0 rounded-2xl md:text-xl text-base text-opacity-80 font-normal text-gray-300 sm:text-left mb-4 text-left reveal-left">
                         <p>Hello there! I'm <span class="font-semibold text-white text-opacity-90">Frederick
                                 Socorin</span>, a
                             22-year-old
@@ -6738,6 +6753,7 @@
         </div>
     </div>
     <!-- Scripts -->
+    <script src="./javascript/scroll-reveal.js"></script>
     <script src="./javascript/modals.js"></script>
     <script src=" ./javascript/hamburger.js"></script>
     <script src="./javascript/animation.js"></script>

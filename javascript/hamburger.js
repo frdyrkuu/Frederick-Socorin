@@ -11,7 +11,7 @@ function Hamburger() {
         timer = setTimeout(() => {
             ham.classList.remove("visible");
             ham.classList.add("hidden");
-        }, 5000);
+        }, 20000);
     } else {
         ham.classList.remove("visible");
         ham.classList.add("hidden");
